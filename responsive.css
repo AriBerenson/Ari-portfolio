@@ -123,3 +123,7 @@ footer { padding:40px 48px; border-top:1px solid #1B24301a; font-family:'JetBrai
   .card:hover { transform:none; box-shadow:none; }
   .footer-note { display:none; }
 }
+
+/* LinkedIn icon in the menu */
+.nav .links a.li { display:inline-flex; align-items:center; }
+.nav .links a.li svg { width:18px; height:18px; display:block; }

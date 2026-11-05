@@ -38,6 +38,10 @@
   .meta-row { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin:0 auto 90px; width:calc(100% - 96px); max-width:904px; padding:32px 0; border-top:1px solid #1B24301a; border-bottom:1px solid #1B24301a; }
   .meta-item .label { font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.05em; color:#1B243088; margin-bottom:8px; }
   .meta-item .value { font-size:15px; font-weight:500; }
+  .meta-item .credit { margin-bottom:10px; line-height:1.3; }
+  .meta-item .credit:last-child { margin-bottom:0; }
+  .meta-item .credit strong { display:block; font-weight:500; }
+  .meta-item .credit span { display:block; font-size:13px; font-weight:400; color:#1B243099; }
   .meta-item .value.ph { color:#DD5E1E; font-style:italic; }
 
   section { padding:0 48px 100px; max-width:1000px; margin:0 auto; }
@@ -75,7 +79,7 @@
 
 <div class="nav">
   <a href="index.html" class="mark"><img src="images/Ari-Berenson_Logo_Transparent-BG.png" alt="Ari Berenson" width="111" height="66"></a>
-  <div class="links"><a href="index.html">Work</a><a href="about.html">About</a><a href="resume.pdf" target="_blank">Resume</a><a href="contact.html">Contact</a></div>
+  <div class="links"><a href="index.html">Work</a><a href="about.html">About</a><a href="resume.pdf" target="_blank">Resume</a><a href="https://www.linkedin.com/in/ariberenson/" class="li" target="_blank" rel="noopener" aria-label="Ari on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
 </div>
 
 
@@ -94,15 +98,20 @@
 <div class="meta-row">
   <div class="meta-item">
     <div class="label">ROLE</div>
-    <div class="value">UI/UX Design Lead</div>
+    <div class="value">Creative Lead</div>
   </div>
   <div class="meta-item">
     <div class="label">TIMELINE</div>
-    <div class="value ph">[add timeline]</div>
+    <div class="value">2017</div>
   </div>
   <div class="meta-item">
     <div class="label">TEAM</div>
-    <div class="value ph">[add team / collaborators]</div>
+    <div class="value">
+      <div class="credit"><strong>Ari Berenson</strong><span>Creative Lead</span></div>
+      <div class="credit"><strong>Dan Fogg</strong><span>Lead mobile engineer</span></div>
+      <div class="credit"><strong>Jarrod Mclean</strong><span>CTO</span></div>
+      <div class="credit"><strong>Michael Africk</strong><span>CEO</span></div>
+    </div>
   </div>
   <div class="meta-item">
     <div class="label">SKILLS</div>
@@ -113,13 +122,13 @@
 <section>
   <div class="section-label">THE PROBLEM</div>
   <h2>Real estate agents were drowning in disconnected tools — MLS listings in one place, client texts in another, and no clear signal on who actually needed a follow-up.</h2>
-  <p class="body-text"><span class="ph-tag">[Ari: replace with the real problem]</span> Agents were spending hours manually cross-referencing new listings against what each client wanted, then reaching out one by one — with no way to tell which clients were actively engaged versus going cold. How might we help agents prioritize their time and communicate with clients in the moment a match happens, instead of after the fact?</p>
+  <p class="body-text">Agently was created and developed in parallel with Inmoji’s principal mission objective and built on the same tech suite. It was a white-label solution for real estate agents, meant to give realtors a better tool for finding, managing, and matching listings to new and existing buyers. Core features included contact management and direct messaging with buyers, activity and task logging, and agent-only access to the Multiple Listing Service (MLS).</p>
 </section>
 
 <section>
   <div class="section-label">RESEARCH</div>
   <h2>Key insights that shaped the design</h2>
-  <p class="body-text"><span class="ph-tag">[Ari: swap in real research findings — interviews, competitive analysis, data points]</span> Agents don't check dashboards on a schedule — they react to notifications throughout the day, often from their phone between showings. Any tool that required them to log in and dig for information would get ignored. Clients, meanwhile, engage most when a listing is shared to them directly and personally, not through a generic portal.</p>
+  <p class="body-text">There was nothing like Agently being used by realtors, internally or otherwise, at the time. The tools they relied on were hard to work with, weren’t built for mobile, and made it difficult to move between many disconnected sites and databases. There was also no tool for managing an agent’s list of contacts and their buyers’ details.</p>
   <div class="img-pair">
     <div>
       <img src="images/Agently_5.jpg" alt="Active clients list and contact detail">
