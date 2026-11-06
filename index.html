@@ -70,6 +70,11 @@
   .card .tag .dot { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:6px; vertical-align:middle; }
 
   .footer-note { margin:0 48px 60px; font-family:'JetBrains Mono',monospace; font-size:11px; color:#1B243066; }
+
+  /* Card 05: on tablet and phone the card is nearly square, so shift the crop right to keep "VAZEE" whole */
+  @media (max-width: 900px) {
+    .card[href="newbalance-vazee.html"] .thumb { object-position:85% 50%; }
+  }
 </style>
 <link rel="stylesheet" href="responsive.css">
 </head>
@@ -153,7 +158,7 @@
     </div>
   </a>
   <a href="newbalance-vazee.html" class="card ink">
-    <img class="thumb" src="images/VAZEE-Jenny-WorkSample.webp" alt="New Balance: VAZEE Launch">
+    <img class="thumb" src="images/VAZEE-Shoe-thumb.jpg" alt="New Balance: VAZEE Launch">
     <div class="overlay">
       <div class="overlay-top">
         <div class="num">05</div>
